@@ -17,3 +17,10 @@ function updateObjectWithKeyAndValue(object, key, value) {
   newObject[key] = value;
   return newObject;
 }
+
+function deleteFromObjectByKey(object, key) {
+  var newObject = Object.assign({}, object);
+  delete newObject[key];
+  return newObject;
+}
+
